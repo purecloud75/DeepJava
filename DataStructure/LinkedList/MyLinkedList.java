@@ -59,7 +59,7 @@ public class MyLinkedList {
             Node temp1 = node(k - 1);  //2번인덱스(3번째객체)에 넣고싶다면 바로이전인 1번인덱스의 주소를 알아야 한다.
             Node temp2 = temp1.next;  //temp1, temp2 는 그냥 노드를 가리키고 바라보는 해바라기 팬 같은거임 그냥.
             Node newNode = new Node(input);
-            temp1.next = newNode;  //내가 내 주소값 줄테니까 넌 나 가르켜야 돼. 알았지?
+            temp1.next = newNode;  //내(오른쪽)가 내 주소값 줄테니까 넌(왼쪽) 나만 바라봐야 해. 알았지?
             newNode.next = temp2;
             size++;
             if (newNode.next == null) {
@@ -149,10 +149,10 @@ public class MyLinkedList {
 
         public Object next() {  //현재 next 변수가 가리키고 있는 엘리먼트(노드)를 리턴합니다. 그리고 next 는 다음노드를 가리킵니다.
             lastReturned = this.next;
-            this.next = this.next.next;
+            this.next = this.next.next;  //next 변수가 가리키는 노드(최초에는 head)의 next 에 할당된 주소, 즉 두번째노드를 가리킨다.
             nextIndex++;  //얘는 next 가 가리키는 노드 즉, 다음노드의 인덱스를 의미하게 된다. 동시에 지금껏 리턴한 갯수를 의미한다.
             return lastReturned.data;
-        }
+        } //결국 이 메소드는 탐색(search)를 위한 메소드이다.
 
         public boolean hasNext() {
             return nextIndex < size();
