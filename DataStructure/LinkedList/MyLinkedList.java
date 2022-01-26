@@ -1,7 +1,5 @@
 package LinkedList;
 
-import java.util.ListIterator;
-
 public class MyLinkedList {
 
     private Node head;

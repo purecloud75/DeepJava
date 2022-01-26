@@ -1,7 +1,5 @@
 package ArrayList;
 
-import java.util.ListIterator;
-
 public class MyArrayList {
 
     private int size = 0;  //배열에 몇 개의 데이터들이 채워져있는가를 나타냄
