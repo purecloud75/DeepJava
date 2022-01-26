@@ -1,4 +1,4 @@
-package ArrayList;
+package Egoing.ArrayList;
 
 public class Test2 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package NewArrayList;
+package ArrayList;
 
 public class MyArray {
 

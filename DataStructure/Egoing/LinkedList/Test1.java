@@ -1,4 +1,4 @@
-package LinkedList;
+package Egoing.LinkedList;
 
 public class Test1 {
     public static void main(String[] args) {

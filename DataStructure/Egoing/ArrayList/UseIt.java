@@ -1,4 +1,4 @@
-package ArrayList;
+package Egoing.ArrayList;
 
 import java.util.ArrayList;
 import java.util.Iterator;

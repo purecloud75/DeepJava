@@ -1,4 +1,4 @@
-package ArrayList;
+package Egoing.ArrayList;
 
 public class MyArrayList {
 
