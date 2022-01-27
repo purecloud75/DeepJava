@@ -49,9 +49,11 @@ public class MyArray {
         int returnValue = ERROR_NUM;
         if (isEmpty()) {
             System.out.println("There is no element");
+            return returnValue;
         }
         if (index < 0 || index > count - 1) {
             System.out.println("remove Error. 범위를 벗어남");
+            return returnValue;
         }
 
         returnValue = intArr[index];
