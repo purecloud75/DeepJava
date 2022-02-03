@@ -15,7 +15,7 @@ public class EqualsTest {
         System.out.println(Jung.hashCode()); //1324119927. 메소드재정의를 했더니 둘다 20150115로 같아졌다.
         System.out.println(Hwang.hashCode()); //990368553. 논리적으로 같아졌기때문에 같은 해시코드가 반환되었다.
 
-        System.out.println(System.identityHashCode(Jung)); //1324119927. 원래 해시코드값이 나온다.
+        System.out.println(System.identityHashCode(Jung)); //1324119927. 원래 해시코드값이 나온다. for 오버라이딩 이전의 기능
         System.out.println(System.identityHashCode(Hwang)); //990368553
 
 
@@ -36,6 +36,8 @@ public class EqualsTest {
 /*
 equals()는 본래 두 객체의 주소값을 비교하는 친구다. ==처럼.
 하지만 재정의를 통해 물리적(주소값)이 아닌 논리적(들어있는 데이터)으로 같은지를 확인하고싶다.
-hashCode()는 key 를 해시함수의 매개값으로 넣었을 때 리턴받는 값으로, 정제되기 전의 물리적 주소를 반환하는 메소드이다.
+hashCode()는 key 를 해시함수의 매개값으로 넣었을 때 리턴값을 반환하는 메소도로, 객체의 주소를 int 로 변환해서 반환한다. 객체의 지문이다.
+equals()를 오버라이딩하면 hashCode()도 오버라이딩 해야한다. 전자의 결과가 true 이면, 두 객체의 해시코드는 같아야 하기 때문
+
 clone()은 객체를 복사해주는 메소드로, 생성자를 통하지 않고 인스턴스를 그대로 복제한다.
  */
