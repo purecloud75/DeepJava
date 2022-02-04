@@ -26,7 +26,7 @@ public class BookTest {
         //객체는 인스턴스변수들의 집합이므로 객체를 문자열로 바꾼다는것은 인스턴스변수의 값을 문자열로 바꾼다는것과 같다. 의미가 있다.
         //메소드 재정의 이후에 해석을 System.out.println(book.toString())으로 하나보다 컴파일러가.
 
-        String str = new String("test");  //String str = "test"; 하고 똑같은 거임.
+        String str = new String("test");
         System.out.println(str); //test
         System.out.println(str.toString()); //test.  위에가 사실상 이 줄과 같은의미다. .toString()이 생략되어있는건가?
     }
