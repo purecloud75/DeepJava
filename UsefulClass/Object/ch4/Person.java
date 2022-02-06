@@ -31,5 +31,5 @@ public class Person {
 
     public String toString() {
         return name;
-    } //실행클래스에서 System.out.println(person);처럼 객체변수를 곧장 출력할적에 toString()이 자동으로 붙어서 호출됨. Jung 출력!
+    }
 }

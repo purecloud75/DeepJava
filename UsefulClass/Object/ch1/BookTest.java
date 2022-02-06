@@ -27,8 +27,9 @@ public class BookTest {
         //메소드 재정의 이후에 해석을 System.out.println(book.toString())으로 하나보다 컴파일러가.
 
         String str = new String("test");
-        System.out.println(str); //test
-        System.out.println(str.toString()); //test.  위에가 사실상 이 줄과 같은의미다. .toString()이 생략되어있는건가?
+        System.out.println(str);
+        //이 메소드의 매개값이 바로 출력할 내용인데, 기본타입이 아닌 객체가 들어오면, 객체의 toString()을 호출해서 리턴값을 받아 출력한다.
+        //Object 의 하위클래스인 String 클래스 내에 toString() 메소드가 오버라이딩 되어있어서 바로 객체출력하면 저장된 문자열이 출력!
     }
 }
 
