@@ -48,4 +48,6 @@ Map 인터페이스의 메소드 :
 put(K,V) / get(K)매개값키에 해당하는 값을 리턴 / size()저장된 키의 총 수 / keySet()모든 키를 Set 객체(구슬주머니)에 담기
 containsKey() / containsValue() / entrySet()키와 값의 쌍으로 구성된 모든 Map.Entry 객체를 Set(구슬주머니)에 담아서 리턴
 remove(K)
+
+프로퍼티와 컴페러블 등은 나중에 자세히 공부하자. 어렵다.
  */
